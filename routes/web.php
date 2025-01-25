@@ -3,8 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Livewire\Posts;
-   
-Route::get('posts', Posts::class)->middleware('auth');
+   //Novan Nur Zulhilmi Yardana
 
 Route::get('/', function () {
     return view('welcome');
@@ -18,4 +17,9 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    //Posts Route - Novan Nur Zulhilmi Yardana
+    // Route::get('/posts', function () {
+    //     return view('livewire.posts'); 
+    // })->name('posts');
+    Route::get('/posts', Posts::class)->name('posts');
 });

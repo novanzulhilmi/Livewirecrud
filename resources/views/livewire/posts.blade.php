@@ -45,7 +45,7 @@
                                 <button wire:click = "edit({{ $post->id }})" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-10 rounded">
                                 Edit 
                                 </button>
-                                <button wire:click = "delete({{ $post->id }})" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-10 ml-10 rounded">
+                                <button wire:click = "delete({{ $post->id }})" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-10 ml-10 rounded" onclick="return confirm('Yakin ingin menghapus data?')">
                                 Delete
                                 </button>
                             </td>
